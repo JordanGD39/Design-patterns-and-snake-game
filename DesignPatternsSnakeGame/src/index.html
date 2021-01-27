@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Snake Game</title>    
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.0.2/pixi.min.js"></script>
+<script src="./app.ts" ></script>
+<script src="./designPatterns/Strategy.ts" ></script>
+<script src="./designPatterns/Builder.ts" ></script>
+<script src="./designPatterns/Factory.ts" ></script>
+<script src="./designPatterns/ObjectPool.ts" ></script>
+<script src="./designPatterns/Singleton.ts" ></script>
+<script src="./designPatterns/Facade.ts" ></script>
+<script src="./designPatterns/Observer.ts" ></script>
+<script src="./designPatterns/State.ts" ></script>
+<body>
+    <div id="display" ></div>
+    <h1 id="score">Score: 0</h1>
+    <h1 id="bestScore">Best Score: 0</h1>
+    <canvas id="canvas" width="640" height="480"></canvas>
+    <h1 id="author">Made by Jordan Pignato</h1>
+    <img src="images/SnakeHead.png" style="display: none;" id="headImage"> 
+    <img src="images/SnakeTail.png" style="display: none;" id="tailImage"> 
+    <img src="images/Apple.png" style="display: none;" id="appleImage"> 
+    <audio src="audio/turn.wav" id="turnSfx"></audio>
+    <audio src="audio/died.wav" id="deathSfx"></audio>
+    <audio src="audio/point.wav" id="pointSfx"></audio>
+    <audio src="audio/Climax Reasoning V3 in the 8-Bit World.mp3" id="music"></audio>
+</body>
+</html>
